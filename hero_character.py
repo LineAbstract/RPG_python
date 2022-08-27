@@ -1,17 +1,14 @@
 # main hero character
 
-# from functions import player_name
-# player_name
-
 hero = {                                                    # DICT{} all encompassing
-    'name': # player_name,                                    # String
+    'name': 'test',                                             # String
     'level': 1,                                             # Integer
     'health': 500,                                          # Integer
     'equipment': {"Father's Broadsword"},                   # SET{} of strings
     'attacks': (                                            # TUPLE of TUPLES (each tuple will have attack_name: String, attack_power: Integer)
-        ('power1', 50),
-        ('power2', 75),
-        ('power3', 100)
+        ('Barbarous Slice', 50),
+        ('Seeking Blade', 75),
+        ('Dragon Slash', 100)
     ),        
     'coins': {                                              # DICT{}
         'copper': 0,                                        # Integer
@@ -19,7 +16,7 @@ hero = {                                                    # DICT{} all encompa
         'gold': 0, 
     },
     'phrases': {
-        'on_attack': ['saying1', 'saying2', 'saying3'],     # LIST[] of Strings
-        'on_damage': ['dsaying1', 'dsaying2', 'dsaying3']   # LIST[] of Strings
+        'on_attack': ["and...stay down!", 'SMASH!', 'Feel my RAGEEEE!'],     # LIST[] of Strings
+        'on_defend': ['Owwies', 'Ouchies', "That's going to leave a mark"]   # LIST[] of Strings
     }
 }

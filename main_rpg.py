@@ -1,14 +1,15 @@
-'''
 
-hero suddenly teleports in besides the mage
-    introduce hero to the situation/circumstance
-    hero lost all memory of everything
+import functions
+import hero_character
+import enemy_characters
 
-mage has been critically hurt and asks you the hero to help him out against these ghouls 
 
-'''
-# from hero_character import hero
-# from functions import player_name
+def run_game():
+    functions.intro()
+    functions.start_or_not()
+    # functions.enemy_intro(enemy_characters.enemy1)
+    functions.battle(hero_character.hero, enemy_characters.enemy1)
+    functions.battle(hero_character.hero, enemy_characters.enemy2)
+    functions.battle(hero_character.hero, enemy_characters.enemy3)
+run_game()
 
-# player_name()
-# print(hero)
