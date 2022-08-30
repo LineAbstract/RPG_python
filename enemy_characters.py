@@ -1,18 +1,19 @@
-# 3 enemy characters
 
 import random
+
+# 3 enemy characters
 
 enemy1 = {                                                  # DICT{} all encompassing
     'name': 'Marble, the Earthbreaker',                       # String
     'level': 1,                                             # Integer
-    'health': 150,
-    'max_health': 150,                                          # Integer
+    'health': 160,
+    'max_health': 160,                                          # Integer
     'equipment': {"Savage Greatboots of the Mountain"},     # SET{} of strings
     'attacks': (                                            # TUPLE of TUPLES (each tuple will have attack_name: String, attack_power: Integer)
-        ('Rock Throw', random.randint(11, 19)),
-        ('Stone Spike', random.randint(29, 39)),
-        ('Earthquake', random.randint(44, 56))
-    ),        
+        ('Rock Throw', (11, 19)),
+        ('Stone Spike', (29, 39)),
+        ('Earthquake', (44, 56))
+    ),  
     'coins': {                                              # DICT{}
         'copper': random.randint(0, 100),                   # Integer
         'silver': random.randint(0, 100), 
@@ -27,14 +28,14 @@ enemy1 = {                                                  # DICT{} all encompa
 enemy2 = {                                                  # DICT{} all encompassing
     'name': 'Hurricane Voxis',                              # String
     'level': 1,                                             # Integer
-    'health': 150,
-    'max_health': 150,                                          # Integer
+    'health': 160,
+    'max_health': 160,                                          # Integer
     'equipment': {"Stormfury Chainmail Chestplate"},        # SET{} of strings
     'attacks': (                                            # TUPLE of TUPLES (each tuple will have attack_name: String, attack_power: Integer)
-        ('Air Blast', random.randint(11, 19)),
-        ('Wind Cut', random.randint(29, 39)),
-        ('Hurricane', random.randint(44, 56))
-    ),        
+        ('Air Blast', (11, 19)),
+        ('Wind Cut', (29, 39)),
+        ('Hurricane', (44, 56))
+    ),            
     'coins': {                                              # DICT{}
         'copper': random.randint(0, 100),                   # Integer
         'silver': random.randint(0, 100), 
@@ -53,15 +54,10 @@ enemy3 = {                                                  # DICT{} all encompa
     'max_health': 300,                                          # Integer
     'equipment': {'Infinite Light Necklace'},               # SET{} of strings
     'attacks': (                                            # TUPLE of TUPLES (each tuple will have attack_name: String, attack_power: Integer)
-        ('Electric Zap', random.randint(11, 19)),
-        ('Electric Shock', random.randint(29, 39)),
-        ('Lightning Storm', random.randint(44, 56))
-    ),
-    'attacks1': (                                            # TUPLE of TUPLES (each tuple will have attack_name: String, attack_power: Integer)
         ('Electric Zap', (11, 19)),
         ('Electric Shock', (29, 39)),
         ('Lightning Storm', (44, 56))
-    ),        
+    ),
     'coins': {                                              # DICT{}
         'copper': random.randint(0, 100),                   # Integer
         'silver': random.randint(0, 100), 
@@ -72,12 +68,3 @@ enemy3 = {                                                  # DICT{} all encompa
         'on_defend': ['Ooooof!', 'How did you do that?!', 'Oh jeez, oh no!']   # LIST[] of Strings
     }
 }
-
-
-# enemy_list = []
-# enemy_list.append(enemy1)
-# enemy_list.append(enemy2)
-# enemy_list.append(enemy3)
-# print(enemy_list)
-
-enemy_list = [enemy1, enemy2, enemy3]

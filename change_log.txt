@@ -1,0 +1,15 @@
+#### wishlist
+# add color and speed to text outputs
+# modify enemy to say their phrases on attack and defense
+
+#### done - commited
+# summary:
+# refactored: hero_attack_choice, battle, random_enemy_attack functions
+
+# fixed loot_equip_and_monies function
+
+# added functions: new_hero_attack, hero_level_up, outro, hero_phrase_on_attack, hero_phrase_on_defend
+
+
+#### done - commited
+# added following functions: intro, start_or_not, battle, loot_equip_and_monies, hero_attack_choice. added some story line aspects and print outs to terminal
